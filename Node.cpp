@@ -1,5 +1,5 @@
-#include "Node.h"
-Node::Node()//ÎÞ²Î¹¹Ôì£¬ÐÂ½¨ÁÚ½Ó±í
+ï»¿#include "Node.h"
+Node::Node()//æ— å‚æž„é€ ï¼Œæ–°å»ºé‚»æŽ¥è¡¨
 {
 	data = new Data("name?", "detail?");
 	inDegree = 0;
@@ -8,7 +8,7 @@ Node::Node()//ÎÞ²Î¹¹Ôì£¬ÐÂ½¨ÁÚ½Ó±í
 	linklist = new LinkList();
 }
 
-Node::Node(string name)//¹¹Ôì´ønameµÄ½Úµã
+Node::Node(string name)//æž„é€ å¸¦nameçš„èŠ‚ç‚¹
 {
 	data = new Data(name, "detail?");
 	inDegree = 0;
@@ -18,7 +18,7 @@ Node::Node(string name)//¹¹Ôì´ønameµÄ½Úµã
 	data->name = name;
 }
 
-Node::Node(string name, string detail)//¹¹Ôì´øname, detailµÄ½Úµã
+Node::Node(string name, string detail)//æž„é€ å¸¦name, detailçš„èŠ‚ç‚¹
 {
 	data = new Data(name, detail);
 	inDegree = 0;

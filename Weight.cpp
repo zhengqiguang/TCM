@@ -1,4 +1,4 @@
-#include "Weight.h"
+﻿#include "Weight.h"
 Weight::Weight(double weight)
 {
 	value = weight;
