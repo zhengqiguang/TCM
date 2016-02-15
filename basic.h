@@ -1,7 +1,7 @@
-/*
+ï»¿/*
 UPDATE:
 
-    2016-01-07	18:03	ÎåĞĞ¡¢Ìì¸É¡¢µØÖ§¡¢ÉàÉ«¡¢Ê®¶ş¾­ÂöµÄÃ¶¾ÙÀà
+    2016-01-07	18:03	äº”è¡Œã€å¤©å¹²ã€åœ°æ”¯ã€èˆŒè‰²ã€åäºŒç»è„‰çš„æšä¸¾ç±»
 */
 #pragma once
 #ifndef __BASIC_H__
@@ -19,71 +19,71 @@ enum Status
 	FAIL, SUCCESS, VISITED, UNVISITED
 };
 
-enum FIVE_PHASES    //ÎåĞĞ
+enum FIVE_PHASES    //äº”è¡Œ
 {
 	WOOD, FIRE, EARTH, METAL, WATER
-	//NONE, Ä¾, »ğ, ÍÁ, ½ğ, Ë®
+	//NONE, æœ¨, ç«, åœŸ, é‡‘, æ°´
 };
 
-enum HEAVENLY_STEMS    //Ìì¸É
+enum HEAVENLY_STEMS    //å¤©å¹²
 {
 	JIA, YI, BING, DING, WU, JI, GENG, XIN, REN, GUI
-	//NONE, ¼×, ÒÒ, ±û, ¶¡, Îì, ¼º, ¸ı, ĞÁ, ÈÉ, ¹ï
+	//NONE, ç”², ä¹™, ä¸™, ä¸, æˆŠ, å·±, åºš, è¾›, å£¬, ç™¸
 };
 
-enum EARTHLY_BRANCHES    //µØÖ§
+enum EARTHLY_BRANCHES    //åœ°æ”¯
 {
 	ZI, CHOU, YIN, MAO, CHEN, SI, WU_d, WEI, SHEN, YOU, XU, HAI
-	//NONE, ×Ó, ³ó, Òú, Ã®, ³½, ËÈ, Îç, Î´, Éê, ÓÏ, Ğç, º¥
+	//NONE, å­, ä¸‘, å¯…, å¯, è¾°, å·³, åˆ, æœª, ç”³, é…‰, æˆŒ, äº¥
 };
 
 enum TWELVE_REGULAR_CHANNELS
 {
-	TAIYANG_SMALL_INTESTINE_CHANNEL_OF_HAND,//ÊÖÌ«ÑôĞ¡³¦¾­
-	SHAOYANG_SANJIAO_CHANNEL_OF_HAND,//ÊÖÉÙÑôÈı½¹¾­
-	YANGMING_LARGE_INTESTINE_CHANNEL_OF_HAND,//ÊÖÑôÃ÷´ó³¦¾­
+	TAIYANG_SMALL_INTESTINE_CHANNEL_OF_HAND,//æ‰‹å¤ªé˜³å°è‚ ç»
+	SHAOYANG_SANJIAO_CHANNEL_OF_HAND,//æ‰‹å°‘é˜³ä¸‰ç„¦ç»
+	YANGMING_LARGE_INTESTINE_CHANNEL_OF_HAND,//æ‰‹é˜³æ˜å¤§è‚ ç»
 
-	TAIYIN_LUNG_CHANNEL_OF_HAND,//ÊÖÌ«Òõ·Î¾­
-	SHAOYIN_HEART_CHANNEL_OF_HAND,//ÊÖÉÙÒõĞÄ¾­
-	JUEYIN_PERICARDIUM_CHANNEL_OF_HAND,//ÊÖØÊÒõĞÄ°ü¾­
+	TAIYIN_LUNG_CHANNEL_OF_HAND,//æ‰‹å¤ªé˜´è‚ºç»
+	SHAOYIN_HEART_CHANNEL_OF_HAND,//æ‰‹å°‘é˜´å¿ƒç»
+	JUEYIN_PERICARDIUM_CHANNEL_OF_HAND,//æ‰‹å¥é˜´å¿ƒåŒ…ç»
 
-	TAIYANG_BLADDER_CHANNEL_OF_FOOT,//×ãÌ«Ñô°òë×¾­
-	SHAOYANG_GALLBLADDER_CHANNEL_OF_FOOT,//×ãÉÙÑôµ¨¾­
-	YANGMING_STOMACH_CHANNEL_OF_FOOT,//×ãÑôÃ÷Î¸¾­
+	TAIYANG_BLADDER_CHANNEL_OF_FOOT,//è¶³å¤ªé˜³è†€èƒ±ç»
+	SHAOYANG_GALLBLADDER_CHANNEL_OF_FOOT,//è¶³å°‘é˜³èƒ†ç»
+	YANGMING_STOMACH_CHANNEL_OF_FOOT,//è¶³é˜³æ˜èƒƒç»
 
-	TAIYIN_SPLEEN_CHANNEL_OF_FOOT,//×ãÌ«ÒõÆ¢¾­
-	SHAOYIN_KIDNEY_CHANNEL_OF_FOOT,//×ãÉÙÒõÉö¾­
-	JUEYIN_LIVER_CHANNEL_OF_FOOT//×ãØÊÒõ¸Î¾­
+	TAIYIN_SPLEEN_CHANNEL_OF_FOOT,//è¶³å¤ªé˜´è„¾ç»
+	SHAOYIN_KIDNEY_CHANNEL_OF_FOOT,//è¶³å°‘é˜´è‚¾ç»
+	JUEYIN_LIVER_CHANNEL_OF_FOOT//è¶³å¥é˜´è‚ç»
 };
 
-enum TONGUE_COLOR    //ÉàÉ«
+enum TONGUE_COLOR    //èˆŒè‰²
 {
 //	NONE,
-	PALE,    //µ­°×Éà
-	PINK,    //µ­ºìÉà
-	RED,    //ºìÉà
-	DEEP_RED,    //ç­Éà
-	PURPLISH,    //×ÏÉà
-	GREEN,    //ÇàÉà
+	PALE,    //æ·¡ç™½èˆŒ
+	PINK,    //æ·¡çº¢èˆŒ
+	RED,    //çº¢èˆŒ
+	DEEP_RED,    //ç»›èˆŒ
+	PURPLISH,    //ç´«èˆŒ
+	GREEN,    //é’èˆŒ
 }; 
 
 /*
-class FIVE_EVOLUTIVE_PHASES_AND_SIX_CLIMATIC_FACTORS    //ÔËÆø
+class FIVE_EVOLUTIVE_PHASES_AND_SIX_CLIMATIC_FACTORS    //è¿æ°”
 {
 private:
-	HEAVENLY_STEMS year_t;    //Äê¸É
-	EARTHLY_BRANCHES year_d;    //ÄêÖ§
-	HEAVENLY_STEMS month_t;    //ÔÂ¸É
-	EARTHLY_BRANCHES month_d;    //ÔÂÖ§
-	HEAVENLY_STEMS day_t;    //ÈÕ¸É
-	EARTHLY_BRANCHES day_d;    //ÈÕÖ§
+	HEAVENLY_STEMS year_t;    //å¹´å¹²
+	EARTHLY_BRANCHES year_d;    //å¹´æ”¯
+	HEAVENLY_STEMS month_t;    //æœˆå¹²
+	EARTHLY_BRANCHES month_d;    //æœˆæ”¯
+	HEAVENLY_STEMS day_t;    //æ—¥å¹²
+	EARTHLY_BRANCHES day_d;    //æ—¥æ”¯
 	int year;
 	int month;
 	int day;
 	
 	FIVE_EVOLUTIVE_PHASES_AND_SIX_CLIMATIC_FACTORS()
 	{
-		time_t tt = time(NULL);//Õâ¾ä·µ»ØµÄÖ»ÊÇÒ»¸öÊ±¼äcuo
+		time_t tt = time(NULL);//è¿™å¥è¿”å›çš„åªæ˜¯ä¸€ä¸ªæ—¶é—´cuo
 		tm* t = localtime(&tt);
 		year = t->tm_year + 1900;
 		month = t->tm_mon + 1;
@@ -154,16 +154,16 @@ public:
 	{
 		switch (x)
 		{
-		case JIA: return "¼×";
-		case YI: return "ÒÒ";
-		case BING: return "±û";
-		case DING: return "¶¡";
-		case WU: return "Îì";
-		case JI: return "¼º";
-		case GENG: return "¸ı";
-		case XIN: return "ĞÁ";
-		case REN: return "ÈÉ";
-		case GUI: return "¹ï";
+		case JIA: return "ç”²";
+		case YI: return "ä¹™";
+		case BING: return "ä¸™";
+		case DING: return "ä¸";
+		case WU: return "æˆŠ";
+		case JI: return "å·±";
+		case GENG: return "åºš";
+		case XIN: return "è¾›";
+		case REN: return "å£¬";
+		case GUI: return "ç™¸";
 		}
 	}
 
@@ -171,18 +171,18 @@ public:
 	{
 		switch (x)
 		{
-		case ZI: return "×Ó";
-		case CHOU: return "³ó";
-		case YIN: return "Òú";
-		case MAO: return "Ã®";
-		case CHEN: return "³½";
-		case SI: return "ËÈ";
-		case WU_d: return "Îç";
-		case WEI: return "Î´";
-		case SHEN: return "Éê";
-		case YOU: return "ÓÏ";
-		case XU: return "Ğç";
-		case HAI: return "º¥";
+		case ZI: return "å­";
+		case CHOU: return "ä¸‘";
+		case YIN: return "å¯…";
+		case MAO: return "å¯";
+		case CHEN: return "è¾°";
+		case SI: return "å·³";
+		case WU_d: return "åˆ";
+		case WEI: return "æœª";
+		case SHEN: return "ç”³";
+		case YOU: return "é…‰";
+		case XU: return "æˆŒ";
+		case HAI: return "äº¥";
 		}
 	}
 
@@ -191,7 +191,7 @@ public:
 */
 
 
-class Ba_Zi    //°Ë×Ö
+class Ba_Zi    //å…«å­—
 {
 private:
 	HEAVENLY_STEMS year_t;
@@ -205,35 +205,35 @@ private:
 	int year;
 	int month;
 	int day;
-	string toString(HEAVENLY_STEMS const x);//Ìì¸É×ªÎª×Ö·û´®
-	string toString(EARTHLY_BRANCHES const x);//µØÖ§×ªÎª×Ö·û´®
-	HEAVENLY_STEMS getNianGan();//¼ÆËãÄê¸É
-	EARTHLY_BRANCHES getNianZhi();//¼ÆËãÄêÖ§
+	string toString(HEAVENLY_STEMS const x);//å¤©å¹²è½¬ä¸ºå­—ç¬¦ä¸²
+	string toString(EARTHLY_BRANCHES const x);//åœ°æ”¯è½¬ä¸ºå­—ç¬¦ä¸²
+	HEAVENLY_STEMS getNianGan();//è®¡ç®—å¹´å¹²
+	EARTHLY_BRANCHES getNianZhi();//è®¡ç®—å¹´æ”¯
 	HEAVENLY_STEMS getYueGan();
 	EARTHLY_BRANCHES getYueZhi();
 
 	
 
 public:
-	Ba_Zi();//ÎŞ²Î¹¹Ôìº¯Êı¼ÆËãµ±Ç°Ê±¼ä
-	Ba_Zi(int year);//¼ÆËãÖ¸¶¨Äê
-	Ba_Zi(int year, int month);//¼ÆËãÖ¸¶¨ÄêÔÂ
-	Ba_Zi(int year, int month, int day);//¼ÆËãÖ¸¶¨ÄêÔÂÈÕ
-	Ba_Zi(int year, int month, int day, int hour);//¼ÆËãÖ¸¶¨Ê±¼ä
+	Ba_Zi();//æ— å‚æ„é€ å‡½æ•°è®¡ç®—å½“å‰æ—¶é—´
+	Ba_Zi(int year);//è®¡ç®—æŒ‡å®šå¹´
+	Ba_Zi(int year, int month);//è®¡ç®—æŒ‡å®šå¹´æœˆ
+	Ba_Zi(int year, int month, int day);//è®¡ç®—æŒ‡å®šå¹´æœˆæ—¥
+	Ba_Zi(int year, int month, int day, int hour);//è®¡ç®—æŒ‡å®šæ—¶é—´
 
 	
 
-	string printNianGan();//Äê¸ÉÊä³öÎª×Ö·û´®
-	string printNianZhi();//ÄêÖ§Êä³öÎª×Ö·û´®
+	string printNianGan();//å¹´å¹²è¾“å‡ºä¸ºå­—ç¬¦ä¸²
+	string printNianZhi();//å¹´æ”¯è¾“å‡ºä¸ºå­—ç¬¦ä¸²
 
-	HEAVENLY_STEMS Nian_Gan();//Äê¸É
-	EARTHLY_BRANCHES Nian_Zhi();//ÄêÖ§
-	HEAVENLY_STEMS Yue_Gan();//ÔÂ¸É
-	EARTHLY_BRANCHES Yue_Zhi();//ÔÂÖ§
-	HEAVENLY_STEMS Ri_Gan();//ÈÕ¸É
-	EARTHLY_BRANCHES Ri_Zhi();//ÈÕÖ§
-	HEAVENLY_STEMS Shi_Gan();//Ê±¸É
-	EARTHLY_BRANCHES Shi_Zhi();//Ê±Ö§
+	HEAVENLY_STEMS Nian_Gan();//å¹´å¹²
+	EARTHLY_BRANCHES Nian_Zhi();//å¹´æ”¯
+	HEAVENLY_STEMS Yue_Gan();//æœˆå¹²
+	EARTHLY_BRANCHES Yue_Zhi();//æœˆæ”¯
+	HEAVENLY_STEMS Ri_Gan();//æ—¥å¹²
+	EARTHLY_BRANCHES Ri_Zhi();//æ—¥æ”¯
+	HEAVENLY_STEMS Shi_Gan();//æ—¶å¹²
+	EARTHLY_BRANCHES Shi_Zhi();//æ—¶æ”¯
 
 
 };
