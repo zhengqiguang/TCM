@@ -1,4 +1,4 @@
-ï»¿#pragma once
+#pragma once
 
 #include "LinkListNode.h"
 
@@ -7,19 +7,19 @@
 #include "basic.h"
 class LinkListNode;
 
-class LinkList//é‚»æ¥è¡¨ç±»
+class LinkList//ÁÚ½Ó±íÀà
 {
 	friend class NetWork;
 private:
-	int linkListNodeTotal;//èŠ‚ç‚¹æ•°ç›®
-	LinkListNode* head;//è¡¨å¤´æŒ‡é’ˆ
+	int linkListNodeTotal;//½ÚµãÊıÄ¿
+	LinkListNode* head;//±íÍ·Ö¸Õë
 
 public:
-	LinkList();//æ„å»º
-	Node* read(int n) const;//è¯»å–ç¬¬nä¸ªèŠ‚ç‚¹æŒ‡é’ˆ
-	Status insert(Node*, Weight*);//é»˜è®¤ä½ç½®æ’å…¥æŒ‡å‘NodeæŒ‡é’ˆçš„é‚»æ¥è¡¨èŠ‚ç‚¹
-	Status remove(LinkListNode*);//åˆ é™¤æŒ‡å‘çš„é‚»æ¥è¡¨èŠ‚ç‚¹
-	Status clear();//æ¸…ç©ºé“¾è¡¨
+	LinkList();//¹¹½¨
+	Node* read(int n) const;//¶ÁÈ¡µÚn¸ö½ÚµãÖ¸Õë
+	Status insert(Node*, Weight*);//Ä¬ÈÏÎ»ÖÃ²åÈëÖ¸ÏòNodeÖ¸ÕëµÄÁÚ½Ó±í½Úµã
+	Status remove(LinkListNode*);//É¾³ıÖ¸ÏòµÄÁÚ½Ó±í½Úµã
+	Status clear();//Çå¿ÕÁ´±í
 	~LinkList();
-	void printLinkList() const;//è¾“å‡ºé‚»æ¥è¡¨æˆå‘˜;
+	void printLinkList() const;//Êä³öÁÚ½Ó±í³ÉÔ±;
 };

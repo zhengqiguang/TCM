@@ -1,6 +1,6 @@
-ï»¿#pragma once
+#pragma once
 #include "basic.h"
-class Data//èŠ‚ç‚¹æ•°æ®
+class Data//½ÚµãÊı¾İ
 {
 	friend class Node;
 private:

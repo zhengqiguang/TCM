@@ -1,5 +1,5 @@
-﻿#include "Node.h"
-Node::Node()//无参构造，新建邻接表
+#include "Node.h"
+Node::Node()//�޲ι��죬�½��ڽӱ�
 {
 	data = new Data("name?", "detail?");
 	inDegree = 0;
@@ -8,7 +8,7 @@ Node::Node()//无参构造，新建邻接表
 	linklist = new LinkList();
 }
 
-Node::Node(string name)//构造带name的节点
+Node::Node(string name)//�����name�Ľڵ�
 {
 	data = new Data(name, "detail?");
 	inDegree = 0;
@@ -18,7 +18,7 @@ Node::Node(string name)//构造带name的节点
 	data->name = name;
 }
 
-Node::Node(string name, string detail)//构造带name, detail的节点
+Node::Node(string name, string detail)//�����name, detail�Ľڵ�
 {
 	data = new Data(name, detail);
 	inDegree = 0;

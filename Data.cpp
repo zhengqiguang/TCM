@@ -1,5 +1,5 @@
-ï»¿#include "Data.h"
-Data::Data(string name = "name", string detail = "detail")//æ„é€ æ•°æ®ç±»
+#include "Data.h"
+Data::Data(string name = "name", string detail = "detail")//¹¹ÔìÊı¾İÀà
 {
 	this->name = name;
 	this->detail = detail;

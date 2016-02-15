@@ -1,10 +1,10 @@
-ï»¿#pragma once
+#pragma once
 
 #include "Data.h"
 #include "LinkList.h"
 #include "basic.h"
 class LinkList;
-class Node//èŠ‚ç‚¹ç±»
+class Node//½ÚµãÀà
 {
 private:
 	Data* data;
@@ -12,18 +12,18 @@ public:
 	int id;
 	//Status isVisited = UNVISITED;
 	bool isVisited = false;
-	LinkList* linklist;//é‚»æ¥è¡¨æŒ‡é’ˆ
-	int inDegree;//å…¥åº¦
-	int outDegree;//å‡ºåº¦
-	static int nodeCount;//èŠ‚ç‚¹æ€»æ•°
+	LinkList* linklist;//ÁÚ½Ó±íÖ¸Õë
+	int inDegree;//Èë¶È
+	int outDegree;//³ö¶È
+	static int nodeCount;//½Úµã×ÜÊı
 
 	Node();
 	Node(string name);
 	Node(string name, string detail);
 
-	Data getData() const;//è¿”å›èŠ‚ç‚¹æ•°æ®
-	string getName() const;//è¿”å›èŠ‚ç‚¹æ•°æ®ä¸­çš„name
-	string getDetail() const;//è¿”å›èŠ‚ç‚¹æ•°æ®ä¸­çš„detail
+	Data getData() const;//·µ»Ø½ÚµãÊı¾İ
+	string getName() const;//·µ»Ø½ÚµãÊı¾İÖĞµÄname
+	string getDetail() const;//·µ»Ø½ÚµãÊı¾İÖĞµÄdetail
 	void setData(Data);
 	void setName(string);
 	void setDetail(string);

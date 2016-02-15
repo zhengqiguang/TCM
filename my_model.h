@@ -1,4 +1,4 @@
-ï»¿#pragma once
+#pragma once
 
 
 #include "Node.h"
@@ -10,30 +10,30 @@
 class NetWork
 {
 private:
-	void showNetWorkhelp(Node*, int, Weight*, bool);//ç½‘ç»œæ˜¾ç¤ºè¾…åŠ©å‡½æ•°
+	void showNetWorkhelp(Node*, int, Weight*, bool);//ÍøÂçÏÔÊ¾¸¨Öúº¯Êı
 
 	void setFlag(Node* node, bool flag);
 
-	void showNode(Node*);//æ˜¾ç¤ºèŠ‚ç‚¹ä¸­"name"
+	void showNode(Node*);//ÏÔÊ¾½ÚµãÖĞ"name"
 
 public:
 	//int nodeNum, edgeNum;
-	//Node* addNode();//å¢åŠ ä¸€ä¸ªå‰é©±ä¸ºæ ¹çš„èŠ‚ç‚¹
-	//Node* addNode(Node* newNode, Node* node, Weight* weight);//å¢åŠ ä¸€ä¸ªåœ°å€ä¸ºnewNode, å‰é©±æŒ‡é’ˆä¸ºnode, æƒé‡ä¸ºweightçš„èŠ‚ç‚¹ï¼Œè¿”å›newNodeåœ°å€
+	//Node* addNode();//Ôö¼ÓÒ»¸öÇ°ÇıÎª¸ùµÄ½Úµã
+	//Node* addNode(Node* newNode, Node* node, Weight* weight);//Ôö¼ÓÒ»¸öµØÖ·ÎªnewNode, Ç°ÇıÖ¸ÕëÎªnode, È¨ÖØÎªweightµÄ½Úµã£¬·µ»ØnewNodeµØÖ·
 
 	Node* root;
 
-	NetWork();//æ„é€ å‡½æ•°
+	NetWork();//¹¹Ôìº¯Êı
 
 	int getNodeNum();
 
-	Node* addNode(Node* node, Weight* weight);//å¢åŠ ä¸€ä¸ªå‰é©±æŒ‡é’ˆä¸ºnodeï¼Œæƒé‡ä¸ºweightçš„èŠ‚ç‚¹ï¼Œè¿”å›å…¶åœ°å€
+	Node* addNode(Node* node, Weight* weight);//Ôö¼ÓÒ»¸öÇ°ÇıÖ¸ÕëÎªnode£¬È¨ÖØÎªweightµÄ½Úµã£¬·µ»ØÆäµØÖ·
 
-	Status add(Node* from, Node* to, Weight* weight);//é€šç”¨çš„æ·»åŠ èŠ‚ç‚¹ã€æ·»åŠ æ›´æ”¹æƒå€¼
+	Status add(Node* from, Node* to, Weight* weight);//Í¨ÓÃµÄÌí¼Ó½Úµã¡¢Ìí¼Ó¸ü¸ÄÈ¨Öµ
 
-	Status add(Node* from, Node* to, double weight);//é€šç”¨çš„æ·»åŠ èŠ‚ç‚¹ã€æ·»åŠ æ›´æ”¹æƒå€¼
+	Status add(Node* from, Node* to, double weight);//Í¨ÓÃµÄÌí¼Ó½Úµã¡¢Ìí¼Ó¸ü¸ÄÈ¨Öµ
 
-	Node* add(Node* from, string to, double weight);//è¿”å›toçš„èŠ‚ç‚¹åœ°å€
+	Node* add(Node* from, string to, double weight);//·µ»ØtoµÄ½ÚµãµØÖ·
 
 	void removeLink(Node* from, Node* to);
 

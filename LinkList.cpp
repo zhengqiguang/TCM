@@ -1,4 +1,4 @@
-ï»¿#include "LinkList.h"
+#include "LinkList.h"
 LinkList::LinkList()
 {
 	head = NULL;
@@ -16,9 +16,9 @@ Node * LinkList::read(int n) const
 }
 
 Status LinkList::insert(Node *node, Weight* weight)
-//é»˜è®¤ä½ç½®æ’å…¥æŒ‡å‘NodeæŒ‡é’ˆçš„é‚»æŽ¥è¡¨èŠ‚ç‚¹
+//Ä¬ÈÏÎ»ÖÃ²åÈëÖ¸ÏòNodeÖ¸ÕëµÄÁÚ½Ó±í½Úµã
 {
-	if (head != NULL)//å¤´æŒ‡é’ˆä¸æŒ‡å‘ç©º
+	if (head != NULL)//Í·Ö¸Õë²»Ö¸Ïò¿Õ
 	{
 		LinkListNode* p = new LinkListNode(node, weight);
 		if (p == NULL)
@@ -28,7 +28,7 @@ Status LinkList::insert(Node *node, Weight* weight)
 		linkListNodeTotal++;
 		return SUCCESS;
 	}
-	else//å¤´æŒ‡é’ˆæŒ‡å‘ç©ºæ—¶ï¼Œæ·»åŠ ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
+	else//Í·Ö¸ÕëÖ¸Ïò¿ÕÊ±£¬Ìí¼ÓµÚÒ»¸ö½Úµã
 	{
 		head = new LinkListNode(node, weight);
 		if (head == NULL)
@@ -38,13 +38,13 @@ Status LinkList::insert(Node *node, Weight* weight)
 	}
 }
 
-Status LinkList::remove(LinkListNode* node)//åˆ é™¤æŒ‡å‘çš„é‚»æŽ¥è¡¨èŠ‚ç‚¹
+Status LinkList::remove(LinkListNode* node)//É¾³ýÖ¸ÏòµÄÁÚ½Ó±í½Úµã
 {
-	if (node != head)//è¢«åˆ é™¤èŠ‚ç‚¹ä¸æ˜¯ç¬¬ä¸€ä¸ª
+	if (node != head)//±»É¾³ý½Úµã²»ÊÇµÚÒ»¸ö
 	{
 		LinkListNode* p = head;
 		int n = linkListNodeTotal;
-		while (p->next != node)//æŠŠpæŒ‡å‘å°†åˆ é™¤èŠ‚ç‚¹çš„å‰ä¸€ä¸ªèŠ‚ç‚¹
+		while (p->next != node)//°ÑpÖ¸Ïò½«É¾³ý½ÚµãµÄÇ°Ò»¸ö½Úµã
 		{
 			p = p->next;
 			n--;
@@ -56,7 +56,7 @@ Status LinkList::remove(LinkListNode* node)//åˆ é™¤æŒ‡å‘çš„é‚»æŽ¥è¡¨èŠ‚ç‚¹
 		linkListNodeTotal--;
 		return SUCCESS;
 	}
-	else//è¢«åˆ é™¤èŠ‚ç‚¹æ˜¯ç¬¬ä¸€ä¸ª
+	else//±»É¾³ý½ÚµãÊÇµÚÒ»¸ö
 	{
 		LinkListNode* p = head;
 		head = head->next;
@@ -66,7 +66,7 @@ Status LinkList::remove(LinkListNode* node)//åˆ é™¤æŒ‡å‘çš„é‚»æŽ¥è¡¨èŠ‚ç‚¹
 	}
 }
 
-Status LinkList::clear()//æ¸…ç©ºé‚»æŽ¥è¡¨
+Status LinkList::clear()//Çå¿ÕÁÚ½Ó±í
 {
 	while (linkListNodeTotal > 0)
 	{

@@ -1,5 +1,5 @@
-ï»¿#include "LinkListNode.h"
-LinkListNode::LinkListNode(Node* nodePtr, Weight* weight)//æž„å»ºä¸€ä¸ªé‚»æŽ¥è¡¨èŠ‚ç‚¹ï¼Œå…¶æ•°æ®æŒ‡å‘èŠ‚ç‚¹Node, æƒé‡ä¸ºweight
+#include "LinkListNode.h"
+LinkListNode::LinkListNode(Node* nodePtr, Weight* weight)//¹¹½¨Ò»¸öÁÚ½Ó±í½Úµã£¬ÆäÊý¾ÝÖ¸Ïò½ÚµãNode, È¨ÖØÎªweight
 {
 	this->nodePtr = nodePtr;
 	this->weight = weight;
