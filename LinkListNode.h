@@ -1,16 +1,16 @@
-#pragma once
+ï»¿#pragma once
 
 #include "Weight.h"
 #include "basic.h"
 #include "LinkList.h"
 #include "Node.h"
 
-class LinkListNode//ÁÚ½Ó±í½ÚµãÀà
+class LinkListNode//é‚»æ¥è¡¨èŠ‚ç‚¹ç±»
 {
 	friend class LinkList;
 public:
-	Node* nodePtr;//Ö¸Ïò½Úµã
-	Weight* weight;//È¨ÖØ
-	LinkListNode* next = NULL;//Ö¸ÏòÏÂÒ»¸öÁÚ½Ó±í½Úµã
-	LinkListNode(Node*, Weight*);//¹¹½¨Ò»¸öÁÚ½Ó±í½Úµã£¬ÆäÊı¾İÖ¸Ïò½ÚµãNode, È¨ÖØÎªweight
+	Node* nodePtr;//æŒ‡å‘èŠ‚ç‚¹
+	Weight* weight;//æƒé‡
+	LinkListNode* next = NULL;//æŒ‡å‘ä¸‹ä¸€ä¸ªé‚»æ¥è¡¨èŠ‚ç‚¹
+	LinkListNode(Node*, Weight*);//æ„å»ºä¸€ä¸ªé‚»æ¥è¡¨èŠ‚ç‚¹ï¼Œå…¶æ•°æ®æŒ‡å‘èŠ‚ç‚¹Node, æƒé‡ä¸ºweight
 };

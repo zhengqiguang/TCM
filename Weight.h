@@ -1,4 +1,4 @@
-#pragma once
+Ôªø#pragma once
 class Weight//»®÷µ¿‡
 {
 public:

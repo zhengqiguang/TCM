@@ -1,4 +1,4 @@
-#include "basic.h"
+ï»¿#include "basic.h"
 
 HEAVENLY_STEMS Ba_Zi::getNianGan()
 {
@@ -84,16 +84,16 @@ string Ba_Zi::toString(HEAVENLY_STEMS const x)
 {
 	switch (x)
 	{
-	case JIA: return "¼×";
-	case YI: return "ÒÒ";
-	case BING: return "±û";
-	case DING: return "¶¡";
-	case WU: return "Îì";
-	case JI: return "¼º";
-	case GENG: return "¸ı";
-	case XIN: return "ĞÁ";
-	case REN: return "ÈÉ";
-	case GUI: return "¹ï";
+	case JIA: return "ç”²";
+	case YI: return "ä¹™";
+	case BING: return "ä¸™";
+	case DING: return "ä¸";
+	case WU: return "æˆŠ";
+	case JI: return "å·±";
+	case GENG: return "åºš";
+	case XIN: return "è¾›";
+	case REN: return "å£¬";
+	case GUI: return "ç™¸";
 	default:return "?";
 	}
 }
@@ -102,18 +102,18 @@ string Ba_Zi::toString(EARTHLY_BRANCHES const x)
 {
 	switch (x)
 	{
-	case ZI: return "×Ó";
-	case CHOU: return "³ó";
-	case YIN: return "Òú";
-	case MAO: return "Ã®";
-	case CHEN: return "³½";
-	case SI: return "ËÈ";
-	case WU_d: return "Îç";
-	case WEI: return "Î´";
-	case SHEN: return "Éê";
-	case YOU: return "ÓÏ";
-	case XU: return "Ğç";
-	case HAI: return "º¥";
+	case ZI: return "å­";
+	case CHOU: return "ä¸‘";
+	case YIN: return "å¯…";
+	case MAO: return "å¯";
+	case CHEN: return "è¾°";
+	case SI: return "å·³";
+	case WU_d: return "åˆ";
+	case WEI: return "æœª";
+	case SHEN: return "ç”³";
+	case YOU: return "é…‰";
+	case XU: return "æˆŒ";
+	case HAI: return "äº¥";
 	default: return "?";
 	}
 }

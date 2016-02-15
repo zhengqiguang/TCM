@@ -1,4 +1,4 @@
-#include "my_model.h"
+ï»¿#include "my_model.h"
 
 void NetWork::showNetWorkhelp(Node* node, int level, Weight* weight, bool isroot)
 {
@@ -50,12 +50,12 @@ NetWork::NetWork()
 	Node::nodeCount = 0;
 }
 
-//Node * NetWork::addNode()//Ôö¼ÓÒ»¸öÇ°ÇıÎª¸ù£¬È¨ÖµÎª0µÄ½Úµã
+//Node * NetWork::addNode()//å¢åŠ ä¸€ä¸ªå‰é©±ä¸ºæ ¹ï¼Œæƒå€¼ä¸º0çš„èŠ‚ç‚¹
 //{
 //	return addNode(root, 0);
 //}
 
-Node* NetWork::addNode(Node* node, Weight* weight)//Ôö¼ÓÒ»¸öÇ°ÇıÖ¸ÕëÎªnode£¬È¨ÖØÎªweightµÄ½Úµã£¬·µ»ØÆäµØÖ·
+Node* NetWork::addNode(Node* node, Weight* weight)//å¢åŠ ä¸€ä¸ªå‰é©±æŒ‡é’ˆä¸ºnodeï¼Œæƒé‡ä¸ºweightçš„èŠ‚ç‚¹ï¼Œè¿”å›å…¶åœ°å€
 {
 	Node* p = new Node();
 	node->linklist->insert(p, weight);
@@ -67,7 +67,7 @@ Node* NetWork::addNode(Node* node, Weight* weight)//Ôö¼ÓÒ»¸öÇ°ÇıÖ¸ÕëÎªnode£¬È¨ÖØ
 }
 
 //Node * NetWork::addNode(Node* newNode, Node * node, Weight* weight)
-////Ôö¼ÓÒ»¸öÇ°ÇıÖ¸ÕëÎªnode, È¨ÖØÎªweight£¬µØÖ·ÎªnewNodeµÄ½Úµã£¬·µ»ØnewNodeµØÖ·
+////å¢åŠ ä¸€ä¸ªå‰é©±æŒ‡é’ˆä¸ºnode, æƒé‡ä¸ºweightï¼Œåœ°å€ä¸ºnewNodeçš„èŠ‚ç‚¹ï¼Œè¿”å›newNodeåœ°å€
 //{
 //	node->linklist->insert(newNode, weight);
 //	//nodeNum++;
@@ -107,7 +107,7 @@ Status NetWork::add(Node * from, Node * to, double weight)
 	return SUCCESS;
 }
 
-Node* NetWork::add(Node * from, string to, double weight)//·µ»ØtoµÄ½ÚµãµØÖ·
+Node* NetWork::add(Node * from, string to, double weight)//è¿”å›toçš„èŠ‚ç‚¹åœ°å€
 {
 	Node* p = new Node(to);
 	add(from, p, weight);
