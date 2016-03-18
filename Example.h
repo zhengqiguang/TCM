@@ -1,20 +1,26 @@
 ﻿#pragma once
 
 #include <vector>
+
 /*
 Example类，描述数据集中的一条数据
 sample向量，是sampleType类型的向量，描述数据中的特征向量X
 label变量，描述分类标签Y
 */
+template <class sampleType, class labelType>class DataSet;
+
+
 template<class sampleType, class labelType>
 class Example
 {
 private:
 	vector<sampleType> sample;
 	labelType label;
-public:
+//public:
 	void readSampleFromFile(fstream& reader, int const dimensionality);
 	void readLabelFromFile(fstream& reader);
+public:
+	friend class DataSet<sampleType, labelType>;
 	void printExample() const;
 	Example() {}
 	bool setSample(int position, sampleType newSample);//设置position位置的数据为newSample

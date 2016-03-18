@@ -24,11 +24,18 @@ private:
 
 	int readFeatureName(fstream&);//读取特征名，返回读取的维度数
 	int readExample(fstream&);
+
 public:
 	DataSet() {}
 	~DataSet() {}
+
 	int readDataFromFile(string filename = "C:\\Users\\Zheng\\Desktop\\test.txt");//读取数据
+	
+	labelType& label(int num);// 读取标签值
+
 	void printDataSet();
+
+	vector<sampleType>& operator[](int i);//读取sample向量，dataset[i]表示第i个sample向量，dataset[i][j]表示第i个sample中的第j个数据
 
 };
 
@@ -83,6 +90,13 @@ inline int DataSet<sampleType, labelType>::readDataFromFile(string filename)
 	return exampleNum;
 }
 
+
+template<class sampleType, class labelType>
+inline labelType& DataSet<sampleType, labelType>::label(int num)
+{
+	return example[num].label;
+}
+
 template<class sampleType, class labelType>
 inline void DataSet<sampleType, labelType>::printDataSet()
 {
@@ -98,4 +112,11 @@ inline void DataSet<sampleType, labelType>::printDataSet()
 	}
 	cout << example.size() << " examples printed" << endl;
 	cout << endl;
+}
+
+template<class sampleType, class labelType>
+inline vector<sampleType>& DataSet<sampleType, labelType>::operator[](int i)
+{
+	// TODO: 在此处插入 return 语句
+	return example[i].sample;
 }
