@@ -27,6 +27,7 @@ public:
 	void setData(Data);
 	void setName(string);
 	void setDetail(string);
+	void f();
 	~Node();
 
 }; 
