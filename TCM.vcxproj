@@ -163,9 +163,8 @@
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="LinkListNode.h" />
     <ClInclude Include="my_model.h" />
+    <ClInclude Include="NavieBayesClassifier.h" />
     <ClInclude Include="Node.h" />
-    <ClInclude Include="ProbabilityTable.h" />
-    <ClInclude Include="RandomVariable.h" />
     <ClInclude Include="Weight.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

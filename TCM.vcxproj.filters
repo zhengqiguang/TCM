@@ -62,16 +62,13 @@
     <ClInclude Include="LinkList.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ProbabilityTable.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="RandomVariable.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="DataSet.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Example.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NavieBayesClassifier.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

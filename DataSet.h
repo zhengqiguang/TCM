@@ -1,11 +1,10 @@
 ﻿#pragma once
 
-//#include <list>
+
 #include <vector>
 #include <string>
 #include <iostream>
 #include <fstream>
-
 #include "Example.h"
 
 /*
@@ -18,7 +17,7 @@ class DataSet
 {
 private:
 	int dimensionality = 0;//维度数
-	int exampleNum = 0;//样本数
+	
 	vector <string> featureName;//
 	vector <Example<sampleType, labelType>> example;
 
@@ -28,6 +27,8 @@ private:
 public:
 	DataSet() {}
 	~DataSet() {}
+
+	int exampleNum = 0;//样本数
 
 	int readDataFromFile(string filename = "C:\\Users\\Zheng\\Desktop\\test.txt");//读取数据
 	
@@ -64,6 +65,7 @@ inline int DataSet<sampleType, labelType>::readExample(fstream& reader)//读取�
 		Example<sampleType, labelType> e;
 		e.readSampleFromFile(reader, dimensionality);
 		e.readLabelFromFile(reader);
+		//cout << reader.get();
 		if (reader.get() == '\n')
 		{
 			example.push_back(e);
