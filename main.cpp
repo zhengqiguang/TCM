@@ -7,12 +7,13 @@ using namespace std;
 
 int main()
 {
-	DataSet<double, string> a;
+	DataSet<string, string> a;
 	a.readDataFromFile();
 	a.printDataSet();
-	NavieBayesClassifier <double, string> nbc(a);
-	nbc.calculate_Prior_Probability();
-	cout << nbc.priorProbability["1"] << endl;
+	NavieBayesClassifier<string, string> nbc(a);
+
+	cout << "p(gg) = " << nbc.priorProbability["gg"] << endl;
+	cout << "p(headache = y | gz) = " << nbc.posteriorProbability("headache", "y", "gz") << endl;
 //	nbc.printPriorProbability();
 //	cout << a[1][2];
 //	cout << a.label(1);

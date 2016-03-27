@@ -16,6 +16,7 @@ template <class sampleType, class labelType>
 class DataSet
 {
 private:
+public:
 	int dimensionality = 0;//维度数
 	
 	vector <string> featureName;//
@@ -27,10 +28,10 @@ private:
 public:
 	DataSet() {}
 	~DataSet() {}
-
+//	friend class NavieBayesClassifier<sampleType, labelType>;
 	int exampleNum = 0;//样本数
 
-	int readDataFromFile(string filename = "C:\\Users\\Zheng\\Desktop\\test.txt");//读取数据
+	int readDataFromFile(string filename = "C:\\Users\\Zheng\\Desktop\\test2.txt");//读取数据
 	
 	labelType& label(int num);// 读取标签值
 
@@ -66,7 +67,7 @@ inline int DataSet<sampleType, labelType>::readExample(fstream& reader)//读取�
 		e.readSampleFromFile(reader, dimensionality);
 		e.readLabelFromFile(reader);
 		//cout << reader.get();
-		if (reader.get() == '\n')
+		//if (reader.get() == '\n')
 		{
 			example.push_back(e);
 		}
@@ -84,7 +85,7 @@ inline int DataSet<sampleType, labelType>::readDataFromFile(string filename)
 	reader.open(filename, ios::in);
 	if (reader.fail())
 	{
-		cout << "file open filed!" << endl;
+		cout << "file open failed!" << endl;
 	}
 	cout << "file open succeed" << endl;
 	dimensionality = readFeatureName(reader);
