@@ -12,10 +12,17 @@ int main()
 	a.printDataSet();
 	NavieBayesClassifier<string, string> nbc(a);
 
-	cout << "p(gg) = " << nbc.priorProbability["gg"] << endl;
-	cout << "p(headache = y | gz) = " << nbc.posteriorProbability("headache", "y", "gz") << endl;
-//	nbc.printPriorProbability();
-//	cout << a[1][2];
-//	cout << a.label(1);
+//	cout << "p(gz) = " << nbc.priorProbability["gz"] << endl;
+//	cout << "p(headache = y | gz) = " << nbc.posteriorProbability("headache", "y", "gz") << endl;
+
+
+	vector<string> s = {"头痛", "恶寒", "恶风", "烦躁", "鼻塞", "鼻涕"};
+
+	vector<string> sample = { "y", "y","y","y", "y","y"};
+	nbc.m_Estimate();
+
+	cout << "" << nbc.classifier(s, sample);
+
+
 	system("pause");
 }

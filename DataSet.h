@@ -31,7 +31,7 @@ public:
 //	friend class NavieBayesClassifier<sampleType, labelType>;
 	int exampleNum = 0;//样本数
 
-	int readDataFromFile(string filename = "C:\\Users\\Zheng\\Desktop\\test2.txt");//读取数据
+	int readDataFromFile(string filename = "C:\\Users\\Zheng\\Desktop\\test1.txt");//读取数据
 	
 	labelType& label(int num);// 读取标签值
 
